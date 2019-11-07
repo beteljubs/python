@@ -54,7 +54,7 @@ if r ** 2 < q ** 3: # 3 raizes reais
     x1 = xR1(q, t, a)
     x2 = xR2(q, t, a)
     x3 = xR3(q, t, a)
-    print("x1 = {} x2 = {} x3 = {}".format(x1, x2, x3)) 
+    print("x1 = {0:.3f} x2 = {1:.3f} x3 = {2:.3f}".format(x1, x2, x3)) 
 
 else:  # 1 raiz real e 2 complexas
     if r > 0:
@@ -76,7 +76,7 @@ else:  # 1 raiz real e 2 complexas
     xi = xCi(p, s)  # raiz complexa 2
 
     if xi > 0:
-        print("x1 = {0:.2f} x2 = {} + {}i x3 = {} - {}i".format(x1, x2, xi, x2, xi))
+        print("x1 = {0:.3f} x2 = {1:.3f} + {2:.3f}i x3 = {3:.3f} - {4:.3f}i".format(x1, x2, xi, x2, xi))
     
     elif xi < 0:
-        print("x1 = {} x2 = {} {}i x3 = {} + {}i".format(x1, x2, xi, x2, abs(xi)))
+        print("x1 = {0:.3f} x2 = {1:.3f} {2:.3f}i x3 = {3:.3f} + {4:.3f}i".format(x1, x2, xi, x2, abs(xi)))
