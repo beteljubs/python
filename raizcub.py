@@ -1,3 +1,10 @@
+'''
+Referencia: Trabalho 3 
+Nome: Juliana Guimarães de Farias 00278075
+Data: 06/11/2019
+Objetivo: desenvolver um código que calcula as raízes (sejam reais ou complexas) de uma equação cúbica
+'''
+
 
 import math
 
