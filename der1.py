@@ -1,20 +1,18 @@
-# códic calculo de derivada sem correcao de erro
+# calculo de derivada sem correcao de erro
 # uso do quoeficiente de Newton
 
-def f(x):
+def f(x):  # funcao escolhida f) = x**2
     f = x**2
     return f
 
-def df_ex(x):
+def df_ex(x):  # derivada calculada analiticamente
     f = 2*x
     return f
     
-h = 0.1 # quanto menor o valor, mais preciso eh o resultado
+h = 0.001 # quanto menor o valor, mais preciso eh o resultado
 
-x = float(input())
+x = float(input("x: "))
 
-df = (f(x + h) - f(x))/h
+df = (f(x + h) - f(x))/h  # QUOEFICIENTE DE NEWTON
 
-df_ex = df_ex(x)
-
-print("valor exato: {} valor calculado: {}".format(df_ex, df))
+print("valor exato: {} valor calculado: {}".format(df_ex(x), df))
