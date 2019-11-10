@@ -13,6 +13,15 @@ h = 0.001 # quanto menor o valor, mais preciso eh o resultado
 
 x = float(input("x: "))
 
-df = (f(x + h) - f(x))/h  # QUOEFICIENTE DE NEWTON
+# FORMULA DE DIFERENCA ADIANTADA (forward differecnce)
+df = (f(x + h) - f(x)) / h  # QUOEFICIENTE DE NEWTON
 
-print("valor exato: {} valor calculado: {}".format(df_ex(x), df))
+print("calculo analitico da derivada: f'= {}".format(df_ex(x)))
+print("DEFERENCA ADIANTADA:")
+print("f' = {}".format(df))
+
+# FORMULA DE DIFERENCA CENTRADA (centered difference)
+df = (f(x + h) - f(x - h)) / (2*h) 
+ 
+print("DIFERENCA CENTRADA:")
+print("f' = {}".format(df))
