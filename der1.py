@@ -1,7 +1,7 @@
 # calculo de derivada sem correcao de erro
 # uso do quoeficiente de Newton
 
-def f(x):  # funcao escolhida f) = x**2
+def f(x):  # funcao escolhida f(x) = x**2
     f = x**2
     return f
 
